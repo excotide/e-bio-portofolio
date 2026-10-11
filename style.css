@@ -73,6 +73,99 @@ body.no-scroll {
 }
 
 /* --------------------------------------------------------------------------
+   Animated Background (mengikuti kursor)
+   -------------------------------------------------------------------------- */
+.bg-fx {
+  --mx: 50vw;
+  --my: 35vh;
+  --px: 0;
+  --py: 0;
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(245, 245, 247, 0.07) 1px, transparent 1.5px);
+  background-size: 28px 28px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, #000 30%, transparent 100%);
+}
+
+/* Titik grid yang menyala di sekitar kursor */
+.bg-grid-glow {
+  background-image: radial-gradient(circle, rgba(242, 201, 76, 0.55) 1.2px, transparent 1.8px);
+  -webkit-mask-image: radial-gradient(220px circle at var(--mx) var(--my), #000 0%, transparent 100%);
+  mask-image: radial-gradient(220px circle at var(--mx) var(--my), #000 0%, transparent 100%);
+}
+
+.bg-spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mx) var(--my), rgba(242, 201, 76, 0.07), transparent 60%);
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.orb-1 {
+  width: 420px;
+  height: 420px;
+  top: -120px;
+  left: -100px;
+  background: rgba(242, 201, 76, 0.35);
+  translate: calc(var(--px) * -40px) calc(var(--py) * -40px);
+  animation: orb-drift-1 22s ease-in-out infinite alternate;
+}
+
+.orb-2 {
+  width: 360px;
+  height: 360px;
+  top: 40%;
+  right: -120px;
+  background: rgba(155, 89, 255, 0.28);
+  translate: calc(var(--px) * 60px) calc(var(--py) * 60px);
+  animation: orb-drift-2 26s ease-in-out infinite alternate;
+}
+
+.orb-3 {
+  width: 300px;
+  height: 300px;
+  bottom: -100px;
+  left: 30%;
+  background: rgba(64, 156, 255, 0.22);
+  translate: calc(var(--px) * -30px) calc(var(--py) * 30px);
+  animation: orb-drift-3 30s ease-in-out infinite alternate;
+}
+
+@keyframes orb-drift-1 {
+  to { transform: translate(120px, 80px) scale(1.15); }
+}
+
+@keyframes orb-drift-2 {
+  to { transform: translate(-140px, -60px) scale(0.9); }
+}
+
+@keyframes orb-drift-3 {
+  to { transform: translate(90px, -110px) scale(1.1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-orb {
+    animation: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
    2. Typography & Base Helpers
    -------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
@@ -1043,7 +1136,7 @@ ul {
 
 .contact-methods-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -1051,6 +1144,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
   padding: 18px 20px;
   background-color: var(--bg-tag);
   border: 1px solid var(--border-color);
@@ -1080,6 +1174,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  min-width: 0;
   overflow: hidden;
 }
 

@@ -9,6 +9,16 @@
 </head>
 <body>
 
+  <!-- Animated Background -->
+  <div class="bg-fx" id="bgFx" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="bg-grid bg-grid-glow"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <div class="bg-spotlight"></div>
+  </div>
+
   <!-- Navigation Bar -->
   <header class="site-header" id="header">
     <div class="container nav-container">
@@ -363,12 +373,6 @@
                   </ul>
                 </div>
 
-                <div class="project-block">
-                  <h4 class="block-title">
-                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
-                  </h4>
-                  <p class="block-desc text-muted">[Belum diisi]</p>
-                </div>
 
                 <div class="project-block">
                   <h4 class="block-title">Teknologi yang Digunakan</h4>
@@ -456,12 +460,6 @@
                   </ul>
                 </div>
 
-                <div class="project-block">
-                  <h4 class="block-title">
-                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
-                  </h4>
-                  <p class="block-desc text-muted">[Belum diisi]</p>
-                </div>
 
                 <div class="project-block">
                   <h4 class="block-title">Teknologi yang Digunakan</h4>
@@ -548,12 +546,6 @@
                   </ul>
                 </div>
 
-                <div class="project-block">
-                  <h4 class="block-title">
-                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
-                  </h4>
-                  <p class="block-desc text-muted">[Belum diisi]</p>
-                </div>
 
                 <div class="project-block">
                   <h4 class="block-title">Teknologi yang Digunakan</h4>
@@ -667,9 +659,9 @@
           <div class="education-details">
             <div class="education-header">
               <h3 class="education-degree">D3 Teknik Informatika</h3>
-              <span class="education-period">[Belum diisi - Tahun Masuk – Tahun Lulus]</span>
+              <span class="education-period">2024 - 2027</span>
             </div>
-            <p class="education-institution">[Belum diisi - Nama Politeknik / Universitas]</p>
+            <p class="education-institution">Politeknik Elektronika Negeri Surabaya</p>
             <div class="education-focus">
               <span class="focus-title">Fokus Pembelajaran:</span>
               <p class="focus-desc">Rekayasa Perangkat Lunak, Struktur Data & Algoritma, Basis Data, dan Pengembangan Aplikasi Web & Mobile.</p>
@@ -697,7 +689,7 @@
 
           <div class="contact-methods-grid">
             <!-- Email Item -->
-            <div class="contact-item">
+            <a href="mailto:labiqjazz@gmail.com" class="contact-item">
               <div class="contact-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
@@ -706,12 +698,12 @@
               </div>
               <div class="contact-info">
                 <span class="contact-label">Email</span>
-                <span class="contact-value" id="emailText">[Belum diisi - email@domain.com]</span>
+                <span class="contact-value" id="emailText">labiqjazz@gmail.com</span>
               </div>
-            </div>
+            </a>
 
             <!-- GitHub Item -->
-            <div class="contact-item">
+            <a href="https://github.com/excotide" class="contact-item" target="_blank" rel="noopener noreferrer">
               <div class="contact-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
@@ -719,12 +711,12 @@
               </div>
               <div class="contact-info">
                 <span class="contact-label">GitHub</span>
-                <span class="contact-value">[Belum diisi - github.com/username]</span>
+                <span class="contact-value">Muhammad Labiq Jazli</span>
               </div>
-            </div>
+            </a>
 
             <!-- LinkedIn Item -->
-            <div class="contact-item">
+            <a href="https://www.linkedin.com/in/muhammad-labiq-jazli-5696a3279" class="contact-item" target="_blank" rel="noopener noreferrer">
               <div class="contact-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -734,9 +726,9 @@
               </div>
               <div class="contact-info">
                 <span class="contact-label">LinkedIn</span>
-                <span class="contact-value">[Belum diisi - linkedin.com/in/username]</span>
+                <span class="contact-value">Muhammad Labiq Jazli</span>
               </div>
-            </div>
+            </a>
 
             <!-- Location Item -->
             <div class="contact-item">
@@ -748,7 +740,7 @@
               </div>
               <div class="contact-info">
                 <span class="contact-label">Lokasi</span>
-                <span class="contact-value">Indonesia / [Belum diisi - Kota]</span>
+                <span class="contact-value">Indonesia / Lamongan</span>
               </div>
             </div>
           </div>

@@ -122,4 +122,45 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   window.addEventListener("scroll", handleScroll, { passive: true });
+
+  // --------------------------------------------------------------------------
+  // 4. Animated Background (Mengikuti Kursor)
+  // --------------------------------------------------------------------------
+  const bgFx = document.getElementById("bgFx");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (bgFx) {
+    const target = { x: window.innerWidth / 2, y: window.innerHeight * 0.35 };
+    const current = { ...target };
+    let rafId = null;
+
+    const render = () => {
+      // Gerak halus (lerp) agar efek terasa mengalir di belakang kursor
+      const ease = reduceMotion ? 1 : 0.08;
+      current.x += (target.x - current.x) * ease;
+      current.y += (target.y - current.y) * ease;
+
+      bgFx.style.setProperty("--mx", `${current.x}px`);
+      bgFx.style.setProperty("--my", `${current.y}px`);
+      bgFx.style.setProperty("--px", ((current.x / window.innerWidth) - 0.5).toFixed(3));
+      bgFx.style.setProperty("--py", ((current.y / window.innerHeight) - 0.5).toFixed(3));
+
+      const settled = Math.abs(target.x - current.x) < 0.5 && Math.abs(target.y - current.y) < 0.5;
+      rafId = settled ? null : requestAnimationFrame(render);
+    };
+
+    const moveTo = (x, y) => {
+      target.x = x;
+      target.y = y;
+      if (!rafId) rafId = requestAnimationFrame(render);
+    };
+
+    window.addEventListener("pointermove", (e) => moveTo(e.clientX, e.clientY), { passive: true });
+    window.addEventListener("touchmove", (e) => {
+      const touch = e.touches[0];
+      if (touch) moveTo(touch.clientX, touch.clientY);
+    }, { passive: true });
+
+    render();
+  }
 });
