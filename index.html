@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Labiq Jazli | Fullstack Developer & AI Engineer</title>
+  <meta name="description" content="Portofolio Muhammad Labiq Jazli - Fullstack Developer & AI Engineer berfokus pada arsitektur Backend, REST API, dan integrasi kecerdasan buatan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Beranda">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Muhammad Labiq Jazli</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Keahlian</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li><a href="#education" class="nav-link">Pendidikan</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-accent btn-sm nav-cta">Hubungi Saya</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu" aria-expanded="false" aria-controls="mobileDrawer">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <span class="drawer-brand">Menu Navigasi</span>
+        <button class="drawer-close-btn" id="closeDrawerBtn" aria-label="Tutup Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">Tentang</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Keahlian</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Proyek</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Pengalaman</a></li>
+        <li><a href="#education" class="mobile-nav-link">Pendidikan</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Kontak</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <a href="#contact" class="btn btn-accent btn-full mobile-cta-btn">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  </header>
+
+  <main>
+    <!-- Hero / Home Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Fullstack Developer & AI Engineer</span>
+        </div>
+        <h1 class="hero-headline">
+          Membangun Sistem Backend yang Andal, Terintegrasi, dan Berbasis AI
+        </h1>
+        <p class="hero-subheadline">
+          Lulusan D3 Teknik Informatika yang berfokus pada pengembangan sistem web, arsitektur REST API, dan integrasi kecerdasan buatan menggunakan Laravel, Python, React, dan Flutter.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-accent btn-lg">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-outline btn-lg">Hubungi Saya</a>
+        </div>
+        <div class="hero-highlights">
+          <div class="highlight-item">
+            <span class="highlight-label">Fokus Utama</span>
+            <span class="highlight-val">Backend & System Integration</span>
+          </div>
+          <div class="highlight-separator"></div>
+          <div class="highlight-item">
+            <span class="highlight-label">Database</span>
+            <span class="highlight-val">Oracle, PostgreSQL, MySQL</span>
+          </div>
+          <div class="highlight-separator"></div>
+          <div class="highlight-item">
+            <span class="highlight-label">Multi-Platform</span>
+            <span class="highlight-val">Web (React) & Mobile (Flutter)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profil</span>
+          <h2 class="section-title">Tentang Saya</h2>
+          <p class="section-subtitle">Mengenal latar belakang dan pendekatan rekayasa perangkat lunak saya</p>
+        </div>
+
+        <div class="about-content-card">
+          <div class="about-text-body">
+            <p>
+              Saya adalah lulusan D3 Teknik Informatika yang berfokus pada pengembangan aplikasi fullstack dan integrasi kecerdasan buatan (AI), dengan ketertarikan mendalam pada arsitektur backend. Selama masa studi dan pengerjaan berbagai proyek, saya terbiasa membangun sistem berbasis web dan mobile yang fungsional—mulai dari perancangan arsitektur database relasional (PostgreSQL, MySQL, Oracle Database), pembuatan REST API yang aman menggunakan Laravel dan Python, hingga integrasi antarmuka pengguna dengan React dan Flutter.
+            </p>
+            <p>
+              Saya antusias memecahkan masalah seputar optimasi alur data, otomatisasi proses bisnis—seperti algoritma pencocokan peran dan peringkas dokumen cerdas berbasis LLM—serta memastikan aplikasi siap dideploy menggunakan container Docker. Pendekatan saya berpusat pada penulisan kode yang terstruktur, integrasi sistem yang efisien, dan penerapan teknologi yang tepat guna untuk memberikan solusi nyata bagi pengguna.
+            </p>
+          </div>
+          <div class="about-meta-grid">
+            <div class="about-meta-box">
+              <span class="meta-label">Pendidikan Terakhir</span>
+              <span class="meta-value">D3 Teknik Informatika</span>
+            </div>
+            <div class="about-meta-box">
+              <span class="meta-label">Spesialisasi Inti</span>
+              <span class="meta-value">Backend Engineering & AI Integration</span>
+            </div>
+            <div class="about-meta-box">
+              <span class="meta-label">Status Ketersediaan</span>
+              <span class="meta-value text-accent">Terbuka untuk Peluang Kerja</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Kompetensi</span>
+          <h2 class="section-title">Keahlian Teknis</h2>
+          <p class="section-subtitle">Alat dan teknologi yang saya gunakan dalam pengembangan perangkat lunak</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="skill-title">Programming Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Python</span>
+              <span class="tag">Dart</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">TypeScript</span>
+            </div>
+          </div>
+
+          <!-- 2. Backend Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">Backend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-highlight">Laravel</span>
+            </div>
+          </div>
+
+          <!-- 3. Frontend Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="3" y1="9" x2="21" y2="9"></line>
+                  <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">Frontend Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">React Js</span>
+            </div>
+          </div>
+
+          <!-- 4. Mobile Development -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">Mobile Development</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Flutter</span>
+            </div>
+          </div>
+
+          <!-- 5. Database Systems -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="skill-title">Database Systems</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Oracle Database</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+
+          <!-- 6. AI & Machine Learning -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3.37 2.09 6.25 5 7.42V20a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2.58c2.91-1.17 5-4.05 5-7.42a8 8 0 0 0-8-8z"></path>
+                  <line x1="10" y1="12" x2="14" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">AI & Machine Learning</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag tag-highlight">Integrasi Groq AI (Llama 3.1)</span>
+            </div>
+          </div>
+
+          <!-- 7. API Architecture -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="18" cy="5" r="3"></circle>
+                  <circle cx="6" cy="12" r="3"></circle>
+                  <circle cx="18" cy="19" r="3"></circle>
+                  <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                  <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">API Architecture</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag tag-highlight">REST API Design & Integration</span>
+            </div>
+          </div>
+
+          <!-- 8. Tools & DevOps -->
+          <div class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
+              <h3 class="skill-title">Tools & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag tag-highlight">Docker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Karya Nyata</span>
+          <h2 class="section-title">Portofolio Proyek</h2>
+          <p class="section-subtitle">Proyek terpilih yang mendemonstrasikan implementasi backend, fullstack, dan integrasi AI</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: ProjectPals Web (Featured) -->
+          <article class="project-card project-card-featured">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="badge-featured">Featured Project</span>
+                <span class="badge-role">Web Application & Backend Core</span>
+              </div>
+              <h3 class="project-title">ProjectPals – Platform Pembentukan Tim Proyek</h3>
+              <p class="project-overview">
+                Platform berbasis web untuk mengotomasi pembentukan tim proyek secara kolaboratif menggunakan algoritma pencocokan peran dan keahlian anggota.
+              </p>
+            </div>
+
+            <div class="project-grid-body">
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-red"></span> Masalah
+                  </h4>
+                  <p class="block-desc">
+                    Pembagian tim kerja manual sering kali tidak seimbang dalam distribusi peran dan keahlian, serta memerlukan koordinasi room dan feedback yang rumit.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-green"></span> Solusi
+                  </h4>
+                  <p class="block-desc">
+                    Membangun sistem web dengan algoritma matching otomatis, standardisasi role anggota, pelacakan target bersama, dan evaluasi tim berbasis peer feedback.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-gold"></span> Fitur Utama
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Manajemen room dan sistem join via kode akses</li>
+                    <li>Algoritma pembentukan tim otomatis berdasarkan profil</li>
+                    <li>Layanan normalisasi role anggota untuk akurasi matching</li>
+                    <li>Target tracking dan sistem evaluasi peer feedback</li>
+                    <li>Panel admin untuk manajemen data</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-blue"></span> Peran & Kontribusi Saya
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Merancang arsitektur backend dengan Laravel 13 dan Oracle Database</li>
+                    <li>Mengembangkan algoritma matching tim dan service normalisasi role</li>
+                    <li>Membangun antarmuka web interaktif menggunakan React, TypeScript, dan TanStack Query</li>
+                    <li>Mengonfigurasi Docker dan pipeline CI/CD untuk otomatisasi deployment</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
+                  </h4>
+                  <p class="block-desc text-muted">[Belum diisi]</p>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">Teknologi yang Digunakan</h4>
+                  <div class="tech-stack-chips">
+                    <span class="chip">Laravel 13</span>
+                    <span class="chip">Oracle Database</span>
+                    <span class="chip">React Js</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">TanStack Query</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">CI/CD</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-links">
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub: [Belum diisi]
+                </span>
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo: [Belum diisi]
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Leksika (AI & Mobile Integration) -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="badge-role">AI & Mobile Integration</span>
+              </div>
+              <h3 class="project-title">Leksika – Asisten Belajar Berbasis AI</h3>
+              <p class="project-overview">
+                Aplikasi asisten belajar berbasis mobile yang memanfaatkan LLM untuk merangkum dokumen dan membuat bahan evaluasi interaktif secara otomatis.
+              </p>
+            </div>
+
+            <div class="project-grid-body">
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-red"></span> Masalah
+                  </h4>
+                  <p class="block-desc">
+                    Pelajar sering kesulitan menyerap poin penting dari materi bacaan berukuran besar dan membutuhkan metode belajar aktif yang efisien.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-green"></span> Solusi
+                  </h4>
+                  <p class="block-desc">
+                    Mengintegrasikan model Groq AI (Llama 3.1) ke dalam backend Laravel untuk ekstraksi materi dokumen menjadi ringkasan, kuis, dan flashcard interaktif di Flutter.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-gold"></span> Fitur Utama
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Unggah dokumen (format PDF, DOCX, TXT)</li>
+                    <li>Rangkuman materi otomatis berbasis Groq AI (Llama 3.1)</li>
+                    <li>Pembuat kuis interaktif dan flashcard otomatis</li>
+                    <li>Autentikasi lengkap: Register, Login, OTP Email, Google OAuth, Reset Password</li>
+                    <li>Sistem streak harian dan notifikasi push via FCM</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-blue"></span> Peran & Kontribusi Saya
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Mengembangkan REST API autentikasi (OTP, Google Login) dan endpoint profil pada Laravel 12</li>
+                    <li>Mengintegrasikan pipeline Groq AI untuk pemrosesan teks dokumen</li>
+                    <li>Menghubungkan seluruh REST API ke antarmuka aplikasi Flutter</li>
+                    <li>Menyiapkan konfigurasi Docker dan deployment backend ke cloud (Railway/Render)</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
+                  </h4>
+                  <p class="block-desc text-muted">[Belum diisi]</p>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">Teknologi yang Digunakan</h4>
+                  <div class="tech-stack-chips">
+                    <span class="chip">Laravel 12</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">Flutter</span>
+                    <span class="chip chip-highlight">Groq AI (Llama 3.1)</span>
+                    <span class="chip">Docker</span>
+                    <span class="chip">FCM</span>
+                    <span class="chip">Railway / Render</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-links">
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub: [Belum diisi]
+                </span>
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo: [Belum diisi]
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: ProjectPals Mobile -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="badge-role">Mobile Application</span>
+              </div>
+              <h3 class="project-title">ProjectPals Mobile – Klien Aplikasi Mobile</h3>
+              <p class="project-overview">
+                Klien mobile multi-platform untuk platform ProjectPals yang memungkinkan akses pemantauan tim, room, dan target proyek secara fleksibel.
+              </p>
+            </div>
+
+            <div class="project-grid-body">
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-red"></span> Masalah
+                  </h4>
+                  <p class="block-desc">
+                    Kebutuhan anggota tim untuk menerima pembaruan proyek dan mengisi feedback secara instan saat tidak berada di depan komputer.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-green"></span> Solusi
+                  </h4>
+                  <p class="block-desc">
+                    Membangun aplikasi mobile berbasis Flutter yang terintegrasi penuh ke backend REST API Laravel yang sama dengan versi web.
+                  </p>
+                </div>
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-gold"></span> Fitur Utama
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Autentikasi pengguna secara mobile</li>
+                    <li>Manajemen room dan pantauan pembagian tim</li>
+                    <li>Monitoring target dan progres kerja</li>
+                    <li>Input feedback antar-anggota tim</li>
+                    <li>Push notification real-time via Firebase Cloud Messaging</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="project-column">
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-blue"></span> Peran & Kontribusi Saya
+                  </h4>
+                  <ul class="feature-bullets">
+                    <li>Mengembangkan antarmuka aplikasi mobile dengan Flutter dan Dart</li>
+                    <li>Mengintegrasikan endpoint backend Laravel (auth, room, tim, target, feedback, token FCM)</li>
+                    <li>Menguji alur pertukaran data dan error handling REST API pada perangkat mobile</li>
+                  </ul>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">
+                    <span class="block-bullet bullet-purple"></span> Hasil Proyek
+                  </h4>
+                  <p class="block-desc text-muted">[Belum diisi]</p>
+                </div>
+
+                <div class="project-block">
+                  <h4 class="block-title">Teknologi yang Digunakan</h4>
+                  <div class="tech-stack-chips">
+                    <span class="chip">Flutter</span>
+                    <span class="chip">Dart</span>
+                    <span class="chip">Laravel</span>
+                    <span class="chip">REST API</span>
+                    <span class="chip">Firebase Cloud Messaging</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-links">
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub: [Belum diisi]
+                </span>
+                <span class="btn-disabled">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo: [Belum diisi]
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Rekam Jejak</span>
+          <h2 class="section-title">Pengalaman Proyek</h2>
+          <p class="section-subtitle">Jejak pengerjaan perangkat lunak pada proyek akademik, personal, dan kolaboratif</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Backend & Fullstack Developer</h3>
+                  <span class="timeline-project-name">ProjectPals</span>
+                </div>
+                <span class="timeline-badge">Proyek Web & Sistem Terdistribusi</span>
+              </div>
+              <p class="timeline-desc">
+                Mengembangkan arsitektur backend Laravel 13 dengan Oracle Database, merancang algoritma matching tim otomatis, mengimplementasikan antarmuka web React TypeScript, serta menyusun pipeline kontainer Docker dan CI/CD.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Backend Developer & Mobile Integrator</h3>
+                  <span class="timeline-project-name">Leksika</span>
+                </div>
+                <span class="timeline-badge">Proyek Aplikasi AI & Mobile</span>
+              </div>
+              <p class="timeline-desc">
+                Membangun REST API autentikasi bertingkat (OTP & Google OAuth) dengan Laravel 12 dan PostgreSQL, mengintegrasikan LLM Groq AI untuk analisis dokumen belajar, serta menangani deployment Docker ke platform Railway/Render.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Mobile Developer & API Integrator</h3>
+                  <span class="timeline-project-name">ProjectPals Mobile</span>
+                </div>
+                <span class="timeline-badge">Proyek Aplikasi Mobile</span>
+              </div>
+              <p class="timeline-desc">
+                Mengimplementasikan antarmuka aplikasi mobile menggunakan Flutter dan menghubungkannya dengan ekosistem REST API ProjectPals serta push notification FCM.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Akademik</span>
+          <h2 class="section-title">Pendidikan</h2>
+        </div>
+
+        <div class="education-card">
+          <div class="education-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="education-details">
+            <div class="education-header">
+              <h3 class="education-degree">D3 Teknik Informatika</h3>
+              <span class="education-period">[Belum diisi - Tahun Masuk – Tahun Lulus]</span>
+            </div>
+            <p class="education-institution">[Belum diisi - Nama Politeknik / Universitas]</p>
+            <div class="education-focus">
+              <span class="focus-title">Fokus Pembelajaran:</span>
+              <p class="focus-desc">Rekayasa Perangkat Lunak, Struktur Data & Algoritma, Basis Data, dan Pengembangan Aplikasi Web & Mobile.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Komunikasi</span>
+          <h2 class="section-title">Kontak</h2>
+          <p class="section-subtitle">Tertarik berdiskusi mengenai peluang kerja atau kolaborasi pengembangan sistem?</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-intro">
+            <p class="contact-text">
+              Saya terbuka untuk kesempatan kerja penuh waktu (<em>Full-time</em>) maupun proyek sebagai Backend Developer, Fullstack Developer, atau Software Engineer. Silakan hubungi saya melalui saluran berikut:
+            </p>
+          </div>
+
+          <div class="contact-methods-grid">
+            <!-- Email Item -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value" id="emailText">[Belum diisi - email@domain.com]</span>
+              </div>
+            </div>
+
+            <!-- GitHub Item -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">[Belum diisi - github.com/username]</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn Item -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">[Belum diisi - linkedin.com/in/username]</span>
+              </div>
+            </div>
+
+            <!-- Location Item -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-info">
+                <span class="contact-label">Lokasi</span>
+                <span class="contact-value">Indonesia / [Belum diisi - Kota]</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">© 2026 Muhammad Labiq Jazli. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+      <a href="#hero" class="back-to-top" aria-label="Kembali ke atas">
+        <span>Kembali ke atas</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
